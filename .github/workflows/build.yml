@@ -1,8 +1,8 @@
 name: Test
 
- on: push
- 
- jobs: 
+on: push
+
+jobs: 
      test:
         runs-on: ubuntu-latest
         steps:
@@ -17,11 +17,5 @@ name: Test
             - name: Install dependencies
               run: yarn
 
-            - name: Clean
-              run: yarn clean
-
             - name: Run tests
               run: yarn test
-
-            - name: Create bundle
-              run: yarn dist
