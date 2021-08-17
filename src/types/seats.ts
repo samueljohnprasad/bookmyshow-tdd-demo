@@ -7,7 +7,7 @@ export type MovieDetails = {
 export type DayTimings = {
     [k : string] : MovieDetails;
 }
-
+  
 
 
 
