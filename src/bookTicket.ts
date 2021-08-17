@@ -10,7 +10,7 @@ export const bookTicket = (date: string,timeSlot: TIMING , currState: AvailableS
             [date]:  bookAvailableSeats(currState[date],timeSlot, numOfTicketsToBook)
         }
         return updatedState
-     
+        
 }
 
 export const bookAvailableSeats= ( seatsForDay: DayTimings ,timeSlot: TIMING, numOfTicketsToBook:number)=>{
